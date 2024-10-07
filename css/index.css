@@ -34,7 +34,7 @@ header {
 }
 
 form {
-    width: 700px;
+    width: 70vw;
     margin: auto;
     padding: 20px;
     background-color: white;
@@ -54,6 +54,13 @@ form {
     }
 }
 
+@media (min-width: 1024px) {
+    form {
+        width: 700px;
+        transition: 0.3s;
+    }
+}
+
 input[type="button"] {
     background-color: var(--cor-fundo);
     font-size: 0.9rem;
@@ -68,6 +75,21 @@ input[type="button"] {
         transition: 0.2s;
     }
 }
+
+#container-res {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+}
+
+#areaRes {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--cor-destaque);
+}
+
+
 
 
 

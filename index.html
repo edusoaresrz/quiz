@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Quiz</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         <p>Teste seus conhecimentos neste quiz com 5 perguntas sobre assuntos diversos.</p>
     </header>
     <main>
-        <form action="">
+        <form action="#">
             <h2>1. Qual é a capital da França? </h2>
             <section class="opçoes">
                 <div>
@@ -108,14 +108,19 @@
                     <label for="d5">5</label>
                 </div>
             </section>
-            <div id="botao">
-                <input type="button" value="Verificar Respostas">
+            <div id="container-res">
+                <div id="botao">
+                    <input type="button" value="Verificar Respostas" onclick="verificarRespostas()">
+                </div>
+                <section id="areaRes">
+                
+                </section>
             </div>
         </form>
-        <section id="acertos">
-
-        </section>
+        
     </main>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
